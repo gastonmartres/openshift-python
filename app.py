@@ -7,7 +7,7 @@ while True:
     for x in range(0,9999): 
         f = open("/tmp/myfile.txt","+a")
         string = str(random.randrange(9999,99999999))
-        print(string)
+        #print(string)
         f.write(string)
         f.close
     with FileLock("/tmp/myfile.txt"):
